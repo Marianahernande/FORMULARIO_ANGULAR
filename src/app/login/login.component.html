@@ -1,0 +1,29 @@
+
+<div class="login-page">
+    <div class="titulo">
+        <h1>Inicio sesion</h1>
+    </div>
+    <div class="form">
+        <div class="usuario_form">
+            <label for="usuario">Nombre de usuario</label>
+            <input class="input" type="text" name="usuario" id="usuario" class="input_usuario" required [(ngModel)]="nombreUsuario">
+        </div>
+
+        <div class="contrasena_form">
+            <label for="usuario">Contraseña</label>
+            <input class="input" type="password" name="contrasena" id="usuario" class="input_contrasena" required [(ngModel)]="contrasena">
+        </div>
+        <div class="botones">
+            <button (click)="validarInicio()" class="inicio">Iniciar sesion</button>
+        </div>
+        <div class="opciones">
+            <button (click)="navegarRegistro()" class="botonRedireccionRegistro">Registrarme</button>
+            <br>
+            <button (click)="forgot()" class="botonRedireccionRecuperacion">Olvide mi contraseña</button>
+
+        </div>
+
+        <div id="mensajeInicioSesion">{{ mensajeInicioSesion }}</div>
+
+    </div>
+</div>

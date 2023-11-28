@@ -1,0 +1,24 @@
+
+<div class="login-page">
+    <div class="titulo">
+        <h1>Recuperar contraseña</h1>
+    </div>
+    <div class="form">
+        <div class="login-form">
+
+            <label for="usuario">Nombre de usuario</label>
+            <input class="input" type="text" name="usuario" id="usuario" required [(ngModel)]="nombreUsuario">
+        </div>
+
+        <div class="contrasena_form">
+            <label   for="usuario">Contraseña</label>
+            <input class="input" type="password" name="contrasena" id="usuario"  required [(ngModel)]="password">
+        </div>
+        <div class="botones">
+            <button (click)="recuperar()" class="inicio">Recuperar contraseña</button>
+        </div>
+
+        <div id="mensajeInicioSesion">{{ mensaje }}</div>
+
+    </div>
+</div>
